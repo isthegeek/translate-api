@@ -77,4 +77,4 @@ def main_input_form_submit():
           response=response)
 
 if __name__ == "__main__":
-    app.run(port=5003)
+    app.run()
