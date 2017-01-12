@@ -10,7 +10,6 @@ from werkzeug import secure_filename
 from googleapiclient import discovery
 import httplib2
 from oauth2client.client import GoogleCredentials
-from pydub import AudioSegment
 
 DISCOVERY_URL = ('https://{api}.googleapis.com/$discovery/rest?'
                  'version={apiVersion}')
