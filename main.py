@@ -29,11 +29,11 @@ def server_error(e):
 
 @app.route('/upload', methods=['POST'])
 def upload():
-    file = request.files['file_to_convert.wav']
+    file = request.files['file_to_convert']
     file_language = request.form['language']
     target = 'en'
     # Check if the file is one of the allowed types/extensions
-    if file and file.content_type in app.config['ALLOWED_MIMETYPE']:
+    if file:
         # Make the filename safe, remove unsupported chars
         filename = secure_filename(file.filename)
         # Move the file form the temporal folder to
