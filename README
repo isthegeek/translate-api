@@ -2,3 +2,5 @@ Source: https://github.com/mattdiamond/Recorderjs
 
 I had the option to convert wav to flac using this: https://progfruits.wordpress.com/2014/05/31/using-google-speech-api-from-python/
 but pydub made the code cleaner
+
+pip install --upgrade google-cloud-translate
